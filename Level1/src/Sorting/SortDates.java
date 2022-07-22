@@ -6,7 +6,7 @@ public class SortDates {
     public static void sortDates(String[] arr) {
           countSort(arr,1000000,100,32);//date
           countSort(arr,10000,100,13); //month
-          countSort(arr,1,10000,2501);
+          countSort(arr,1,10000,2501); //year
     }
 
     public static void countSort(String[] arr,int div, int mod, int range) {
