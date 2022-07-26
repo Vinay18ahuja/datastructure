@@ -1,8 +1,8 @@
-package Recursion;
+package Recursion.introduction;
 
 import java.util.Scanner;
 
-public class PowerLogarithmic {
+public class PowerLinear {
     public static void main(String[] args) throws Exception {
         Scanner scn=new Scanner(System.in);
         int x= scn.nextInt();
@@ -15,11 +15,8 @@ public class PowerLogarithmic {
         if(n==0){
             return 1;
         }
-        int xpnb2=power(x,n/2);
-        int xn=xpnb2*xpnb2;
-        if(n%2==1){
-            xn=x*xn;
-        }
+        int xnm1=power(x,n-1);
+        int xn=x*xnm1;
         return xn;
 
     }
